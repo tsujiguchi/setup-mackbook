@@ -12,4 +12,5 @@ packages:
   - { name: nkf,  state: present }
   - { name: peco, state: present }
   - { name: tree, state: present }
+  - { name: z,    state: present }
   - { name: zsh,  state: latest }
