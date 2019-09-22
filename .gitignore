@@ -1,0 +1,16 @@
+gibo 2.2.3 by Simon Whitaker <sw@netcetera.org>
+https://github.com/simonwhitaker/gibo
+### https://raw.github.com/github/gitignore/3b445ebb926c6c314d6b557462a617b14811430b/Global/Ansible.gitignore
+
+*.retry
+
+
+### https://raw.github.com/github/gitignore/3b445ebb926c6c314d6b557462a617b14811430b/Global/VisualStudioCode.gitignore
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+

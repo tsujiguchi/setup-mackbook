@@ -1,0 +1,18 @@
+- hosts: localhost
+  connection: local
+  tasks:
+    - name: install homebrew cask packages
+      homebrew_cask:
+        name: "{{ item }}"
+      with_items:
+        - alfred
+        - cheatsheet
+        - clipy
+        - docker
+        - dropbox
+        - font-ricty-diminished
+        - google-chrome
+        - google-japanese-ime
+        - iterm2
+        - slack
+        - visual-studio-code

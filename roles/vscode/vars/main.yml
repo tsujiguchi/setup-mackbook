@@ -1,0 +1,34 @@
+---
+# file: ./vsc/vars/main.yml
+
+extensions:
+  - mechatroner.rainbow-csv
+  - vscode-icons-team.vscode-icons
+  - oderwat.indent-rainbow
+
+  # git
+
+  # develop
+  - vscodevim.vim
+  - kaiwood.endwise
+  - 42Crunch.vscode-openapi
+
+  # ruby
+  - rebornix.ruby
+  - misogi.ruby-rubocop
+  - sianglim.slim
+  - bung87.rails
+  - castwide.solargraph
+
+  # golang
+
+  # java, spring
+
+  # ansible
+  - vscoss.vscode-ansible
+
+  # docker
+
+  # bash
+
+  # tools

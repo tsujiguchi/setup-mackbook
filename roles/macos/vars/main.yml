@@ -1,0 +1,12 @@
+settings:
+  # うまく反映されない
+  - { key: InitialKeyRepeat, type: int, value: 1, state: present }
+  - { key: KeyRepeat, type: int, value: 1, state: present }
+
+settings_with_domain:
+  - { domain: com.apple.menuextra.battery, key: ShowPercent, type: string, value: YES }
+  - { domain: com.apple.finder, key: AppleShowAllFiles, type: string, value: true }
+  - { domain: com.apple.dock, key: orientation, type: string, value: right }
+  - { domain: com.apple.dock, key: autohide, type: bool, value: true }
+  - { domain: com.apple.dock, key: tilesize, type: float, value: 25 }
+

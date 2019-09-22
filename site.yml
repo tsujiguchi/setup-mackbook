@@ -1,0 +1,12 @@
+- hosts: localhost
+  connection: local
+  gather_facts: yes
+  roles:
+    - homebrew
+    - homebrew_cask
+    - fonts
+    - vscode
+    - oh-my-zsh
+    - macos
+    - anyenv
+    

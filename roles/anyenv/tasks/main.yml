@@ -1,0 +1,34 @@
+---
+# file: ./anyenv/tasks/main.yml
+
+- block:
+
+  - name: anyenv install
+    homebrew:
+      name: "anyenv"
+      state: "present"
+
+  - name: write zshrc
+    shell: echo 'eval "$(anyenv init -)"' >> ~/.zshrc
+
+  - name: make plugin directory
+    file:
+      path: $(anyenv root)/plugins
+      state: directory
+      mode: 0755
+
+  - name: set anyenv_root_path
+    shell: echo $(anyenv root)/plugins/anyenv-update
+    register: anyenv_root_path
+
+  - name: git clone anyenv-update
+    git:
+      repo: git@github.com:znz/anyenv-update.git
+      dest: "{{ item }}"
+      remote: upstream
+      update: no
+    with_items: 
+      - "{{ anyenv_root_path.stdout_lines }}"
+
+  tags:
+    - anyenv

@@ -1,0 +1,15 @@
+---
+# file: ./homebrew/vars/main.yml
+
+taps:
+  - homebrew/cask
+  - homebrew/cask-versions
+  - homebrew/core
+
+packages:
+  - { name: gibo, state: present }
+  - { name: git,  state: present }
+  - { name: nkf,  state: present }
+  - { name: peco, state: present }
+  - { name: tree, state: present }
+  - { name: zsh,  state: latest }

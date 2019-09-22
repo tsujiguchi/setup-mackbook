@@ -1,0 +1,21 @@
+---
+# file: ./oh-my-zsh/tasks/main.yml
+
+- block:
+
+  - name: check oh-my-zsh
+    stat: path=~/.oh-my-zsh/
+    register: d
+
+  - name: install oh-my-zsh
+    shell: sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    when: d.stat.exists == false 
+
+  - name: 'copy .zshrc'
+    template:
+      src: ../templates/.zshrc.j2
+      dest: ~/.zshrc
+
+  tags:
+    - oh-my-zsh
+

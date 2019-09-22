@@ -1,0 +1,18 @@
+---
+# file: ./homebrew_cask/vars/main.yml
+
+packages:
+  - { name: alfred, state: present }
+  - { name: cheatsheet, state: present }
+  - { name: clipy, state: present }
+  - { name: docker, state: present }
+  - { name: dropbox, state: present }
+  - { name: google-chrome, state: present }
+  - { name: google-drive-file-stream, state: present }
+  - { name: google-japanese-ime, state: present }
+  - { name: iterm2, state: present }
+  - { name: karabiner-elements, state: present }
+  - { name: slack, state: present }
+  - { name: Spectacle, state: present }
+  - { name: visual-studio-code, state: present }
+
