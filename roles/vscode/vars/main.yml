@@ -5,30 +5,42 @@ extensions:
   - mechatroner.rainbow-csv
   - vscode-icons-team.vscode-icons
   - oderwat.indent-rainbow
+  - CoenraadS.bracket-pair-colorizer
+  - MS-CEINTL.vscode-language-pack-ja
+  - shardulm94.trailing-spaces
 
-  # git
+  # theme
+  - azemoh.one-monokai
+
+  # tools
+  - fabiospampinato.vscode-todo-plus
+  - mohsen1.prettify-json
+  - Shan.code-settings-sync
+  - shd101wyy.markdown-preview-enhanced
+
+  # common
+  - VisualStudioExptTeam.vscodeintellicode
 
   # develop
   - vscodevim.vim
   - kaiwood.endwise
   - 42Crunch.vscode-openapi
+  - wayou.vscode-todo-highlight
+  - xyz.local-history
 
-  # ruby
+  # ruby/rails
   - rebornix.ruby
   - misogi.ruby-rubocop
+  - karunamurti.haml
   - sianglim.slim
   - bung87.rails
   - castwide.solargraph
 
   # golang
-
-  # java, spring
+  - ms-vscode.Go
 
   # ansible
   - vscoss.vscode-ansible
 
-  # docker
-
-  # bash
-
-  # tools
+  # digdag
+  - msysyamamoto.vscode-digdag

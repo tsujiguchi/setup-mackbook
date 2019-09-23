@@ -6,6 +6,7 @@
   - name: visual studio code install extension
     raw: "code --install-extension {{ item }}"
     with_items: '{{ extensions }}'
+    changed_when: no
 
   tags:
     - vsc
