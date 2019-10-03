@@ -8,10 +8,12 @@ taps:
 
 packages:
   - { name: docker-compose, state: present }
-  - { name: gibo, state: present }
-  - { name: git,  state: present }
-  - { name: nkf,  state: present }
-  - { name: peco, state: present }
-  - { name: tree, state: present }
-  - { name: z,    state: present }
-  - { name: zsh,  state: latest }
+  - { name: gibo,       state: present }
+  - { name: git,        state: present }
+  - { name: mysql@5.7,  state: present }
+  - { name: nkf,        state: present }
+  - { name: peco,       state: present }
+  - { name: rbenv,      state: present }
+  - { name: tree,       state: present }
+  - { name: z,          state: present }
+  - { name: zsh,        state: latest }
